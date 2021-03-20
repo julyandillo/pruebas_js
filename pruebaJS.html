@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- boostrap 5 -->
+		<link
+				href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+				rel="stylesheet"
+				integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+				crossorigin="anonymous">
+
+		<!-- fontawesome -->
+		<script src="https://kit.fontawesome.com/88e76e3f8a.js" crossorigin="anonymous"></script>
+		<title>Prueba de JS</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-light">
+				<button id="generar" type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Generar tabla</button>
+			</div>
+			<div class="tabla-autogenerada"></div>
+			<div id="modal" class="modal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<div id="alert-modal" class="alert alert-danger d-none" role="alert">Introduce un numero de filas</div>
+							<form>
+								<div class="form-group">
+									<label for="filas">Numero de filas: </label>
+									<input id="filas" type="text">
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+							<button type="button" id="modal-generar" class="btn btn-primary">Generar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
