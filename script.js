@@ -1,6 +1,6 @@
 import ModalController from "./modal.js";
 
-document.addEventListener('DOMContentLocaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 	const my_modal = new ModalController('modal');
 });
 

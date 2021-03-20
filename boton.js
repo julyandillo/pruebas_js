@@ -1,7 +1,7 @@
 export default class Boton {
     constructor(callback) {
         this.boton = document.createElement('button');
-        this.boton.classList.add('btn', 'btn-sm');
+        this.boton.classList.add('btn', 'btn-sm', 'ms-1');
 
         this.boton.onclick = callback;
     }
