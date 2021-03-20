@@ -1,4 +1,4 @@
-import Boton from "./boton";
+import Boton from "./boton.js";
 
 export default class BotonEliminar extends Boton {
     constructor(callback) {

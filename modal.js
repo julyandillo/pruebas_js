@@ -1,4 +1,4 @@
-import Table from "./table";
+import Table from "./table.js";
 
 export default class ModalController {
     constructor(id_modal) {

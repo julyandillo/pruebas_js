@@ -1,4 +1,4 @@
-import BotonEliminar from "./botonEliminar";
+import BotonEliminar from "./botonEliminar.js";
 
 export default class Table {
     constructor() {
