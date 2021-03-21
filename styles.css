@@ -1,0 +1,26 @@
+.sidebar {
+    width: 249px;
+    background: #f5f2f0;
+    border-left: 1px solid #d5d2d0;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    height: 100%;
+    z-index: 0;
+}
+.sidebar-btn {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+.sidebar-btn::before {
+    font-size: 22px;
+    color: #8b8987;
+    content: "!";
+}
+.page-sidebar-on {
+    padding-right: 250px;
+}
+.page-animation {
+    transition: padding-right 0.5s ease-in-out;
+}
