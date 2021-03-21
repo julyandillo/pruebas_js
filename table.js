@@ -57,12 +57,7 @@ export default class Table {
     }
 
     editRow(id) {
-        //console.log('editar', id);
         this.modalEditar.mostrar(id);
-    }
-
-    guardar() {
-        console.log('guardar');
     }
 
     getElement() {

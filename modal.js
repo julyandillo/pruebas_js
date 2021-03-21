@@ -1,6 +1,6 @@
 import Table from "./table.js";
 
-export default class ModalController {
+export default class ModalGenerar {
     constructor(id_modal) {
         this.modal = document.getElementById(id_modal);
         // cada vez que se muestre el modal lo inicializa (input en blanco y quita el posible alert)
@@ -37,12 +37,6 @@ export default class ModalController {
 
         document.querySelector('.tabla-autogenerada').appendChild(table.getElement());
         document.getElementById('nueva-fila').classList.remove('d-none');
-
-        const btnGuardar = document.createElement('button');
-        btnGuardar.classList.add('btn', 'btn-sm', 'btn-info', 'float-right');
-        btnGuardar.innerText = 'Guardar';
-        btnGuardar.onclick = () => table.guardar();
-        document.querySelector('.tabla-autogenerada').appendChild(btnGuardar);
 
         this.modalBS.hide();
     }
