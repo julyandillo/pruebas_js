@@ -17,9 +17,26 @@
 	<body>
 		<div class="container-fluid">
 			<div class="navbar navbar-light">
-				<button id="generar" type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Generar tabla</button>
+				<button id="generar"
+						type="button"
+						class="btn btn-sm btn-primary"
+						data-bs-toggle="modal"
+						data-bs-target="#modal"
+				>
+					Generar tabla
+				</button>
+				<button
+						id="nueva-fila"
+						type="button"
+						class="btn btn-sm btn-success d-none"
+						data-bs-toggle="modal"
+						data-bs-target="#modal-nueva"
+				>
+					Nueva fila
+				</button>
 			</div>
 			<div class="tabla-autogenerada"></div>
+
 			<div id="modal" class="modal" tabindex="-1">
 				<div class="modal-dialog">
 					<div class="modal-content">
@@ -36,9 +53,53 @@
 							</form>
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-							<button type="button" id="modal-generar" class="btn btn-primary">Generar</button>
+							<button type="button" class="btn-sm btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+							<button type="button" id="modal-generar" class="btn-sm btn-primary">Generar</button>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="modal-editar" class="modal" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="filas">Texto: </label>
+								<input id="texto" type="text">
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn-sm btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+						<button type="button" id="editar" class="btn-sm btn-primary">Editar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="modal-nueva" class="modal" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="filas">Texto: </label>
+								<input id="texto-nuevo" type="text">
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn-sm btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+						<button type="button" id="nueva" class="btn-sm btn-primary">Añadir</button>
 					</div>
 				</div>
 			</div>

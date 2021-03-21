@@ -15,6 +15,8 @@ export default class ModalController {
 
         // para poder ocultar el modal hay que tener el objeto de boostrap (ya no hace falta usar jquery)
         this.modalBS = new bootstrap.Modal(this.modal);
+
+
     }
 
     setBlank() {
@@ -28,11 +30,19 @@ export default class ModalController {
             return;
         }
 
-        const table = new Table();
-        document.querySelector('.tabla-autogenerada').appendChild(table.getElement());
+        const table = Table.getInstance();
         for(let i = 0; i < this.inputFilas.value; i++) {
             table.addRow();
         }
+
+        document.querySelector('.tabla-autogenerada').appendChild(table.getElement());
+        document.getElementById('nueva-fila').classList.remove('d-none');
+
+        const btnGuardar = document.createElement('button');
+        btnGuardar.classList.add('btn', 'btn-sm', 'btn-info', 'float-right');
+        btnGuardar.innerText = 'Guardar';
+        btnGuardar.onclick = () => table.guardar();
+        document.querySelector('.tabla-autogenerada').appendChild(btnGuardar);
 
         this.modalBS.hide();
     }
