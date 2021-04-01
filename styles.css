@@ -1,5 +1,5 @@
 .sidebar {
-    width: 249px;
+    width: 0%;
     background: #f5f2f0;
     border-left: 1px solid #d5d2d0;
     position: fixed;
@@ -12,15 +12,37 @@
     border-radius: 50%;
     width: 44px;
     height: 44px;
+    content: "";
+    line-height: 22;
+    color: white;
 }
 .sidebar-btn::before {
-    font-size: 22px;
-    color: #8b8987;
-    content: "!";
+    line-height: 22;
+    color: white;
+    content: "";
+}
+.sidebar-btn::after {
+    line-height: 22;
+    color: white;
+    content: "";
+}
+.page {
+    position: relative;
+    background: white;
+    z-index: 1;
+    width: 60%;
+    margin-right: 20%;
+    margin-left: auto;
 }
 .page-sidebar-on {
-    padding-right: 250px;
+    margin-right: 25%;
 }
 .page-animation {
-    transition: padding-right 0.5s ease-in-out;
+    transition: margin-right 0.5s ease-in-out;
+}
+.sidebar-on {
+    width: 25%;
+}
+.sidebar-animation {
+    transition: width 0.5s ease-in-out;
 }

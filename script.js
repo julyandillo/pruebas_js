@@ -13,9 +13,9 @@ function showSidebar() {
 	const sidebar = document.getElementById('sidebar');
 	if (!div.classList.contains('page-sidebar-on')) {
 		div.classList.add('page-sidebar-on');
-		sidebar.classList.remove('d-none');
+		sidebar.classList.add('sidebar-on');
 	} else {
 		div.classList.remove('page-sidebar-on');
-		sidebar.classList.add('d-none');
+		sidebar.classList.remove('sidebar-on');
 	}
 }
