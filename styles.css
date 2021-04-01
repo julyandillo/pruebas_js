@@ -62,3 +62,11 @@
     margin-right: auto;
     background: #f3d9a9;
 }
+#menu-izqda {
+    position: fixed;
+    top: 60px;
+    width: 60px;
+    height: 100%;
+    background: cadetblue;
+    border-right: 2px solid #2d9598;
+}
